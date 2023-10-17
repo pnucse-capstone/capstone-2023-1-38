@@ -1,0 +1,118 @@
+# 프로젝트 관련 구성
+lsj:
+  # 파일 경로
+  profile:
+  addressEnabled: false
+  # 인증번호 유형: math 배열계산, char 문자인증
+  captchaType: math
+
+# 개발 환경 구성
+server:
+  # 서버의 HTTP 포트, 기본값은 8080
+  port: 8080
+  servlet:
+    # 애플리케이션 액세스 경로
+    context-path: /
+  tomcat:
+    # Tomcat용 URI 인코딩
+    uri-encoding: UTF-8
+    # Tomcat의 최대 스레드 수, 기본값은 200
+    max-threads: 800
+    # Tomcat이 시작하고 초기화하는 스레드 수, 기본값은 25
+    min-spare-threads: 30
+
+fdfs:
+  so-timeout: 1501
+  connect-timeout: 601
+  thumb-image:
+    width: 60
+    height: 60
+  tracker-list: localhost
+  address: localhost
+
+# 日志配置 로그 구성
+logging:
+  level:
+    com.lsj: debug
+    org.springframework: warn
+
+spring:
+  # 리소스 정보
+  messages:
+    #국제화 리소스 파일 경로
+    basename: i18n/messages
+  profiles: 
+    active: druid
+    # 파일 업로드
+  servlet:
+     multipart:
+       # 단일 파일 크기
+       max-file-size:  10MB
+       # 총 업로드 파일 크기 설정
+       max-request-size:  20MB
+  # 서비스 모듈
+  devtools:
+    restart:
+      # 핫 배포 스위치
+      enabled: true
+  # redis 구성
+  redis:
+    # 주소
+    host: 127.0.0.1
+    # 기본값은 6379
+    port: 6379
+    # 비밀번호
+    password: 
+    #접속 시간 초과
+    timeout: 10s
+    lettuce:
+      pool:
+        # 연결 풀에서 가장 작은 유휴 연결
+        min-idle: 0
+        # 연결 풀의 최대 유휴 연결
+        max-idle: 8
+        # 연결 풀에 대한 최대 데이터베이스 연결 수
+        max-active: 8
+        # 연결 풀의 최대 차단 대기 시간(제한 없음을 나타내려면 음수 값 사용)
+        max-wait: -1ms
+
+token:
+    # token 정의 ID
+    header: Authorization
+    # token 키
+    secret: abcdefghijklmnopqrstuvwxyz
+    # token 유효 기간(기본30분)
+    expireTime: 30
+  
+#MyBatis 구성
+mybatis:
+    # 지정된 패키지 별칭 검색
+    typeAliasesPackage: com.lsj.**.domain
+    # 모든 mapper.xml 매핑 파일을 찾도록 매퍼 스캔 구성
+    mapperLocations: classpath*:mapper/**/*Mapper.xml
+    # 전역 구성 파일 로드
+    configLocation: classpath:mybatis/mybatis-config.xml
+
+# PageHelper 페이징 플러그인
+pagehelper: 
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

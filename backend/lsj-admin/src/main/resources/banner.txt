@@ -1,0 +1,4 @@
+Application Version: ${lsj.version}
+Spring Boot Version: ${spring-boot.version}
+농산물 관리 시스템-Backend starts running
+
