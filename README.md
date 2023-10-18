@@ -42,7 +42,7 @@
         <td>이메일</td>
         <td>liboyang@pusan.ac.kr</td>
         <td>songyufan@naver.com</td>
-        <td>jiangujeong@pusan.ac.kr</td>
+        <td>jangujeong@pusan.ac.kr</td>
     </tr>
         <tr>
         <td>역할</td>
