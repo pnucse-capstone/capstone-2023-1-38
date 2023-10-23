@@ -62,5 +62,52 @@
 
 ### 5. 사용법
 
-● 먼저 hyperledger fabric 설치부터 한다.
-    아래 링크를 통해 hyperledger fabric을 설치하고 테스
+#### hyperledger fabric
+● 아래 링크를 통해 hyperledger fabric 공식 문서을 참고하고 설치한다.<a href="https://hyperledger-fabric.readthedocs.io/en/latest/getting_started.html">hyperledger fabric 공식 문서</a><br>
+●  hyperledger fabric이 요구하는 docker, golang 등 모든 요소를 설치해야 한다.
+●  Redis 및 FastDFS 설치해야 한다.
+● application.yml 파일 중 Redis주소와 Fastdfs주소를 수정해야 한다.
+```
+  # redis
+  redis:
+    # 주소
+    host: 127.0.0.1
+    # 포트
+    port: 6379
+    # 비밀번호
+    password: 
+
+  fdfs:
+      so-timeout: 1501
+      connect-timeout: 601
+      thumb-image:
+        width: 60
+        height: 60
+      tracker-list: 
+      address: 
+```
+● application.yml 파일 중 mysql주소를 수정해야 한다.
+```
+# mysql
+spring:
+    datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driverClassName: com.mysql.cj.jdbc.Driver
+        druid:
+            master:
+                url: 
+                username: 
+                password: 
+```
+#### webUI
+1. 의존성 설치
+> npm install --registry=https://registry.npm.taobao.org
+
+2. 연결된 블록체인 네트워크 주소 수정
+main.js，ip주소를 블록체인 네트워크가 있는 서버 주소로 수정하였다.
+```
+Vue.prototype.$httpUrl = "http://localhost:8080/";
+```
+3. 프로젝트 시작
+> npm run dev  
+
