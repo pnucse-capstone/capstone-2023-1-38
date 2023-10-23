@@ -61,3 +61,6 @@
 <hr>
 
 ### 5. 사용법
+
+● 먼저 hyperledger fabric 설치부터 한다.
+    아래 링크를 통해 hyperledger fabric을 설치하고 테스
