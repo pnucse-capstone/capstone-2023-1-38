@@ -54,8 +54,11 @@
 <hr> 
 
 ### 3. 구성도
-![image](img/구성도.png)
+![image](img/구성도.png)  
+### 블룩체인 과정
+![image](img/블룩체인과정.png)  
 
+<hr>
 ### 4. 소개 및 시연 영상
 
 <hr>
