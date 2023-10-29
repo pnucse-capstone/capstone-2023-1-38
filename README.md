@@ -61,6 +61,7 @@
 <hr>  
 
 ### 4. 소개 및 시연 영상
+[![영상 소개](https://www.youtube.com/watch?v=jmD3HbKu9zc.jpg)](https://www.youtube.com/watch?v=jmD3HbKu9zc)
 
 <hr>
 
