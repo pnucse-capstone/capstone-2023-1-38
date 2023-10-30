@@ -7,7 +7,6 @@ import com.lsj.common.core.domain.entity.SysUser;
 import org.springframework.stereotype.Repository;
 
 /**
- * 用户表 数据层
  * 사용자 테이블 데이터 층
  */
 @Repository
