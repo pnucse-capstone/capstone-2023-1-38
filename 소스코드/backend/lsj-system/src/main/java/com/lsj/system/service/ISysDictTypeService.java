@@ -5,7 +5,7 @@ import java.util.List;
 import com.lsj.common.core.domain.entity.SysDictData;
 
 /**
- * 사전 업무층（可能要删）
+ * 사전 업무층
  */
 public interface ISysDictTypeService {
 
