@@ -32,7 +32,6 @@ public class SysDictData extends BaseEntity {
 
     /**
      * 사전 키값
-     * 字典键值
      */
     private String dictValue;
 
