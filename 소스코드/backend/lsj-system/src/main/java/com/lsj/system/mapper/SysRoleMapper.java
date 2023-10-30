@@ -6,7 +6,6 @@ import com.lsj.common.core.domain.entity.SysRole;
 import org.springframework.stereotype.Repository;
 
 /**
- * 角色表 数据层
  * 역할 테이블  데이터 층
  */
 @Repository
