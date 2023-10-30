@@ -69,7 +69,6 @@ public class BaseEntity implements Serializable {
     /**
      * 요청 매개변수
      * 다른 스스로 정의한 요청 매개변수를 저장(키값 쌍 형식)
-     * 用于存储其他自定义的请求参数，以键值对的形式保存
      */
     private Map<String, Object> params;
 
