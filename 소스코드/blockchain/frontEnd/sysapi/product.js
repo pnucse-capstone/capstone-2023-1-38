@@ -30,8 +30,6 @@ try {
 
   /* use the same location for the state store (where the users' certificate are kept)
   * and the crypto store (where the users' keys are kept)
-  *对状态存储使用相同的位置（保存用户证书的位置）
-  *和加密存储（保存用户密钥的地方）
   */  
   var crypto_suite = Fabric_Client.newCryptoSuite();
   var crypto_store = Fabric_Client.newCryptoKeyStore({path: store_path});
