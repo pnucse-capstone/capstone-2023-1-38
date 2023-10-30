@@ -19,7 +19,7 @@ public interface TraceTaskMapper {
     int updateByPrimaryKey(TraceTask record);
 
     /**
-     * 농산물 Id로 任务 조회
+     * 농산물 Id로 조회
      * @param cropsId
      * @return
      */
