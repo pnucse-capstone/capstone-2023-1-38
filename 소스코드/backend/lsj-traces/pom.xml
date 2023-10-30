@@ -64,9 +64,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <!--    允许移动文件        -->
                     <verbose>true</verbose>
-                    <!-- 允许覆盖文件，应该设置为false ，如果为true 前面生成的映射文件将会被覆盖         -->
                     <overwrite>false</overwrite>
                     <configurationFile>
                         src/main/resources/mybatis-generator.xml
