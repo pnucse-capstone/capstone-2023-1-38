@@ -11,12 +11,8 @@ import org.springframework.stereotype.Component;
 import com.lsj.common.constant.Constants;
 import com.lsj.common.core.domain.model.LoginUser;
 import com.lsj.common.core.redis.RedisCache;
-//import com.lsj.common.utils.ServletUtils;
 import com.lsj.common.utils.StringUtils;
-//import com.lsj.common.utils.ip.AddressUtils;
-//import com.lsj.common.utils.ip.IpUtils;
 import com.lsj.common.utils.uuid.IdUtils;
-//import eu.bitwalker.useragentutils.UserAgent;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -145,7 +141,7 @@ public class TokenService {
     }
 
     /**
-     * 토큰에서 데이터 클레임을 얻기 从令牌中获取数据声明
+     * 토큰에서 데이터 클레임을 얻기 
      * @param token 토큰
      * @return 데이터 클레임
      */
@@ -155,13 +151,6 @@ public class TokenService {
                 .parseClaimsJws(token)
                 .getBody();
     }
-
-    /**
-     * token중에 사용자 이름 얻기
-     * @param token 토큰
-     * @return 사용자 이름
-     */
-
 
     /**
      * request token 얻기
