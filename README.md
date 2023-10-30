@@ -105,7 +105,6 @@ spring:
 ```
 #### webUI
 1. 의존성 설치
-> npm install --registry=https://registry.npm.taobao.org
 
 2. 연결된 블록체인 네트워크 주소 수정
 main.js，ip주소를 블록체인 네트워크가 있는 서버 주소로 수정하였다.
