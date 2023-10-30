@@ -1,6 +1,4 @@
-/*
-Fabric网络中注册和认证用户的逻辑
-*/
+
 'use strict';
 /*
 * Copyright IBM Corp All Rights Reserved
