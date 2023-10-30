@@ -86,7 +86,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     /**
      * Spring Security에서 제공하는 BCryptPasswordEncoder 클래스는 암호를 암호화하고 일치시키는 데 사용
      */
-    @Bean//注入spring
+    @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder() {
         return new BCryptPasswordEncoder();
     }
