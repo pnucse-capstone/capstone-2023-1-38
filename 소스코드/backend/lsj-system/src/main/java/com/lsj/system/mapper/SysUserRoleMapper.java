@@ -53,7 +53,6 @@ public interface SysUserRoleMapper {
 
     /**
      * 여러 사용자 역할 수권 취소
-     * 批量取消授权用户角色
      *
      * @param roleId  역할 ID
      * @param userIds 삭제할 사용자 데이터 ID
