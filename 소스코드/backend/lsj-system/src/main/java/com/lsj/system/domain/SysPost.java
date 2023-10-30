@@ -5,8 +5,6 @@ import javax.validation.constraints.Size;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-//import com.lsj.common.annotation.Excel;
-//import com.lsj.common.annotation.Excel.ColumnType;
 import com.lsj.common.core.domain.BaseEntity;
 
 /**
